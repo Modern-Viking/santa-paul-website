@@ -1,6 +1,6 @@
-# REPO TITLE
+# Website for Santa Paul
 
-REPO Description
+This is the website for Santa Paul in the Redlands, California area.
 
 ### link to the deployed website
 - www.template.com
