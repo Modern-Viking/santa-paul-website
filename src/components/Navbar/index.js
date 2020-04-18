@@ -1,7 +1,6 @@
 import React from "react";
 
-class Navbar extends React.Component {
-    render(){
+const Navbar = () => {
         return (
             <nav className="navbar is-transparent">
   <div className="navbar">
@@ -53,7 +52,6 @@ class Navbar extends React.Component {
   </div>
 </nav>
         )
-    };
 };
 
 export default Navbar
