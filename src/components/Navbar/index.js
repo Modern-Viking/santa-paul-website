@@ -5,7 +5,7 @@ const Navbar = () => {
             <nav className="navbar is-transparent">
   <div className="navbar">
     <a className="navbar-item" href="/">
-      <i class="fas fa-sleigh 3x"></i>
+      <i className="fas fa-sleigh 3x"></i>
     </a>
     <div className="navbar-burger burger" data-target="navbarExampleTransparentExample">
     </div>
@@ -39,11 +39,11 @@ const Navbar = () => {
             </a>
           </p>
           <p className="control">
-            <a className="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.8.0/bulma-0.8.0.zip">
+            <a className="button is-primary" href="">
               <span className="icon">
-                <i className="fas fa-download"></i>
+              <i class="fas fa-candy-cane"></i>
               </span>
-              <span>Download</span>
+              <span>Deck the Halls!</span>
             </a>
           </p>
         </div>
