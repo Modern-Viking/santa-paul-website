@@ -6039,7 +6039,12 @@ label.panel-block {
   align-items: stretch;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  margin-left: 125px;
+  margin-right: 125px;
+}
   .hero .navbar {
     background: none; }
   .hero .tabs ul {
