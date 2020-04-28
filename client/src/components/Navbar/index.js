@@ -1,6 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
+import DeckTheHalls from "../deckTheHalls";
+
+
+
+
+
 
 const Navbar = () => {
+
         return (
             <nav className="navbar is-transparent">
   <div className="navbar">
@@ -36,14 +43,6 @@ const Navbar = () => {
               <span>
                 Facebook
               </span>
-            </a>
-          </p>
-          <p className="control">
-            <a className="button is-primary" href="">
-              <span className="icon">
-              <i class="fas fa-candy-cane"></i>
-              </span>
-              <span>Deck the Halls!</span>
             </a>
           </p>
         </div>
