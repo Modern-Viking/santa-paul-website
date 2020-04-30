@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const db = require("../models/reviews");
+const db = require("../models");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/santa-paul-website");
 
@@ -38,8 +38,13 @@ const reviews = [
     }
 ];
 
-const seedReviews = () => {
-    db.collection.insertMany(reviews)
-};
-
-seedReviews();
+db.Reviews.remove({})
+  .then(() => db.Reviews.collection.insertMany(reviews))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
