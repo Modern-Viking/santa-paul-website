@@ -29,8 +29,8 @@ const handleHallDecking = e => {
             <DeckHallsContext.Provider value = {{
                 handleHallDecking, gifState,
             }}>
-            <Navbar/>
             <Canvas/>
+            <Navbar/>
             <Jumbotron/>
             <Buttons/>
             <Bio/>
