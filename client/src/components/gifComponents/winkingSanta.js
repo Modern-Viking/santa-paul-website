@@ -10,7 +10,7 @@ const WinkingSanta = () => {
   const {handleHallDecking, gifState} = useContext(DeckHallsContext);
     return (
         <div>
-          <img src= {gifState ? src : still} />       
+          <img src= {gifState ? still : src} />       
         </div>
       );
   }

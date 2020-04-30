@@ -5,7 +5,7 @@ import Bio from "../components/Bio";
 import ReviewGallery from "../components/Reviewgallery";
 import DeckTheHalls from "../components/deckTheHalls";
 import ShakingBellsOne from "../components/gifComponents/shakingBellsOne";
-import WinkingSanta from "../components/gifComponents/winkingSanta";
+import BookNow from "../components/bookNow";
 
 
 
@@ -30,8 +30,14 @@ const handleHallDecking = e => {
             
             <Navbar/>
             <Jumbotron/>
+            <div className= "columns">
+                <div className= "column">
             <DeckTheHalls/>
-            <WinkingSanta/>
+                </div>
+                <div className= "column">
+            <BookNow/>
+                </div>
+            </div>
             <Bio/>
             <ReviewGallery/>
             <ShakingBellsOne/>

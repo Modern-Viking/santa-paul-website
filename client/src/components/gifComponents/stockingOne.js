@@ -1,16 +1,16 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var GifPlayer = require('react-gif-player');
+import React, {useContext} from 'react'
+import ReactDOM  from 'react-dom'
+import {DeckHallsContext} from '../../pages/Main'
 
 const src = "https://media.giphy.com/media/KxaxguYxaf419SdwuP/giphy.gif";
 const still = "https://media.giphy.com/media/KxaxguYxaf419SdwuP/giphy_s.gif";
  
 const StockingOne = () => {
+  const {handleHallDecking, gifState} = useContext(DeckHallsContext);
     return (
-        <GifPlayer
-          gif={src}
-          still={still}          
-        />
+        <div>
+          <img src= {gifState ? still : src} />       
+        </div>
       );
   }
 
