@@ -3,20 +3,19 @@
 This is the website for Santa Paul in the Redlands, California area.
 
 ### link to the deployed website
-- www.template.com
+- https://santa-pauls-workshop.herokuapp.com/
 
 ## Contents
 * Landing Page
 ![LandingPage](public/assets/images/LandingPageImage.png)
 
-## Instructions
-How to use the REPO
-
 ## Future Updates
-* Future Updates for REPO
+* Admin Capability
+* Online Payment Capability
 
 ## Contributors
 * https://github.com/Modern-Viking
+* https://github.com/seanianking
 
 ## Credits
 
