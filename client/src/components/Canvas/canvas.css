@@ -1,0 +1,6 @@
+canvas {
+   position: fixed;
+   width: 100%;
+   background-image: linear-gradient(0deg, #004e92 0%, #000428 80%);
+   z-index: -1;
+}

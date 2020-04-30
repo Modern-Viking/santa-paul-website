@@ -5,7 +5,7 @@ function BookNow() {
     return (
         <div >
             <p className="control ">
-            <a className="button is-danger is-full is-large is-focused" href="https://bulma.io/documentation/" >
+            <a className="button is-danger is-full is-large is-focused" href="/schedule" >
               <span className="">
               <i class="fas fa-gifts"></i>
               <span className='is-w-95'> Book me now!</span>
