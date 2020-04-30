@@ -7,6 +7,7 @@ import DeckTheHalls from "../components/Buttons/deckTheHalls";
 import ShakingBellsOne from "../components/gifComponents/shakingBellsOne";
 import BookNow from "../components/Buttons/bookNow";
 import Buttons from "../components/Buttons";
+import Canvas from "../components/Canvas"
 
 
 
@@ -30,6 +31,7 @@ const handleHallDecking = e => {
             }}>
             
             <Navbar/>
+            <Canvas/>
             <Jumbotron/>
             <Buttons/>
             <Bio/>
