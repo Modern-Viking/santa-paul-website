@@ -6558,3 +6558,10 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
+.is-full {
+  width: 100% !important;
+  height: 100% !important;
+}
+.is-w-95{
+  width: 95% !important;
+}

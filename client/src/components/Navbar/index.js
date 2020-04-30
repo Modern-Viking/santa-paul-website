@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import DeckTheHalls from "../deckTheHalls";
+import DeckTheHalls from "../Buttons/deckTheHalls";
 
 
 
