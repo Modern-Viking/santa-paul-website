@@ -3,9 +3,10 @@ import Navbar from "../components/Navbar";
 import Jumbotron from "../components/Jumbotron";
 import Bio from "../components/Bio";
 import ReviewGallery from "../components/Reviewgallery";
-import DeckTheHalls from "../components/deckTheHalls";
+import DeckTheHalls from "../components/Buttons/deckTheHalls";
 import ShakingBellsOne from "../components/gifComponents/shakingBellsOne";
-import BookNow from "../components/bookNow";
+import BookNow from "../components/Buttons/bookNow";
+import Buttons from "../components/Buttons";
 
 
 
@@ -30,14 +31,7 @@ const handleHallDecking = e => {
             
             <Navbar/>
             <Jumbotron/>
-            <div className= "columns">
-                <div className= "column">
-            <DeckTheHalls/>
-                </div>
-                <div className= "column">
-            <BookNow/>
-                </div>
-            </div>
+            <Buttons/>
             <Bio/>
             <ReviewGallery/>
             <ShakingBellsOne/>
