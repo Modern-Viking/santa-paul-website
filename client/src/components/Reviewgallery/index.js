@@ -1,11 +1,28 @@
-import React from "react";
+import React, {useEffect} from "react";
 import DancingSanta from "../gifComponents/dancingSanta";
 import LightStringOne from "../gifComponents/lightStringOne";
 import WinkingSanta from "../gifComponents/winkingSanta";
 import ShakingBellsOne from "../gifComponents/shakingBellsOne";
 import StockingOne from "../gifComponents/stockingOne";
+import API from "../../utils/API";
 
 const Reviewgallery = () => {
+
+const getReviews = () => {
+  API.getReviews()
+    .then(results => {
+        console.log(results);
+    })
+    .catch(err => console.log(err));
+};
+
+useEffect(() => {
+  getReviews();
+}, []);
+
+
+
+
     return(
 <section className="hero is-link is-large">
   <div className="hero-body">
