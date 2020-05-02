@@ -8,19 +8,18 @@ import API from "../../utils/API";
 
 const Reviewgallery = () => {
 
-const getReviews = () => {
+const getReviews = (res) => {
   API.getReviews()
-    .then(results => {
-        console.log(results);
+    .then((res) => {
+      console.log(res.data);
+      return (res.data);
     })
     .catch(err => console.log(err));
-};
+  };
 
 useEffect(() => {
   getReviews();
 }, []);
-
-
 
 
     return(
@@ -36,7 +35,7 @@ useEffect(() => {
           <ShakingBellsOne/>        
         </article>
         <article className="tile is-child notification is-warning">
-          <p className="title">...tiles</p>
+          <p className="title">hello</p>
           <p className="subtitle">Bottom tile</p>
         </article>
       </div>
