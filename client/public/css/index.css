@@ -6565,3 +6565,12 @@ label.panel-block {
 .is-w-95{
   width: 95% !important;
 }
+.has-extra-padding{
+  padding: 25px !important;
+}
+.has-text-wrapped{
+  flex-wrap: wrap;
+}
+.is-full-width{
+  width: 100% !important;
+}
