@@ -8,6 +8,7 @@ import ShakingBellsOne from "../components/gifComponents/shakingBellsOne";
 import BookNow from "../components/Buttons/bookNow";
 import Buttons from "../components/Buttons";
 import Canvas from "../components/Canvas"
+import CalendlyForm from "../components/Scheduling/CalendlyForm";
 
 
 
@@ -36,6 +37,7 @@ const handleHallDecking = e => {
             <Bio/>
             <ReviewGallery/>
             <ShakingBellsOne/>
+            <CalendlyForm/>
             </DeckHallsContext.Provider>
         )
 };
