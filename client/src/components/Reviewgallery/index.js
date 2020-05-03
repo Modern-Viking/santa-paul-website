@@ -39,7 +39,7 @@ console.log(reviews);
   <div className="tile is-parent">
     <article className="tile is-child notification is-dark">
       <p className="body">{(reviews.length > 0) ? reviews[0].body : ""}</p>
-      <p className="author">{(reviews.length > 0) ? reviews[0].author : ""}</p>
+      <p className="author">-{(reviews.length > 0) ? reviews[0].author : ""}</p>
     </article>
   </div>
   <div className="tile is-parent">
@@ -49,13 +49,13 @@ console.log(reviews);
   <div className="tile is-parent">
     <article className="tile is-child notification is-dark">
     <p className="body">{(reviews.length > 0) ? reviews[6].body : ""}</p>
-      <p className="author">{(reviews.length > 0) ? reviews[6].author : ""}</p>
+      <p className="author">-{(reviews.length > 0) ? reviews[6].author : ""}</p>
     </article>
   </div>
   <div className="tile is-parent">
     <article className="tile is-child notification is-warning">
     <p className="body">{(reviews.length > 0) ? reviews[1].body : ""}</p>
-      <p className="author">{(reviews.length > 0) ? reviews[1].author : ""}</p>
+      <p className="author">-{(reviews.length > 0) ? reviews[1].author : ""}</p>
     </article>
   </div>
 </div>
@@ -66,7 +66,7 @@ console.log(reviews);
       <div className="tile is-parent">
         <article className="tile is-child notification is-dark">
         <p className="body">{(reviews.length > 0) ? reviews[2].body : ""}</p>
-      <p className="author">{(reviews.length > 0) ? reviews[2].author : ""}</p>
+      <p className="author">-{(reviews.length > 0) ? reviews[2].author : ""}</p>
         </article>
       </div>
       <div className="tile is-8 is-vertical">
@@ -74,7 +74,7 @@ console.log(reviews);
           <div className="tile is-parent">
             <article className="tile is-child notification is-dark">
             <p className="body">{(reviews.length > 0) ? reviews[4].body : ""}</p>
-      <p className="author">{(reviews.length > 0) ? reviews[4].author : ""}</p>
+      <p className="author">-{(reviews.length > 0) ? reviews[4].author : ""}</p>
             </article>
           </div>
           <div className="tile is-parent">
@@ -87,7 +87,7 @@ console.log(reviews);
         <div className="tile is-parent">
           <article className="tile is-child notification is-dark">
           <p className="body">{(reviews.length > 0) ? reviews[3].body : ""}</p>
-      <p className="author">{(reviews.length > 0) ? reviews[3].author : ""}</p>
+      <p className="author">-{(reviews.length > 0) ? reviews[3].author : ""}</p>
           </article>
         </div>
       </div>
@@ -102,7 +102,7 @@ console.log(reviews);
       <div className="tile is-parent">
         <article className="tile is-child notification is-dark">
         <p className="body">{(reviews.length > 0) ? reviews[5].body : ""}</p>
-      <p className="author">{(reviews.length > 0) ? reviews[5].author : ""}</p>
+      <p className="author">-{(reviews.length > 0) ? reviews[5].author : ""}</p>
         </article>
       </div>
     </div>
@@ -111,7 +111,7 @@ console.log(reviews);
     <article className="tile is-child notification is-dark">
       <div className="content">
       <p className="body">{(reviews.length > 0) ? reviews[7].body : ""}</p>
-      <p className="author">{(reviews.length > 0) ? reviews[7].author : ""}</p>
+      <p className="author">-{(reviews.length > 0) ? reviews[7].author : ""}</p>
       </div>
     </article>
   </div>
