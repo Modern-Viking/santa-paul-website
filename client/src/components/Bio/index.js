@@ -6,6 +6,10 @@ const Bio = () => {
 <section className="hero is-danger is-medium">
   <div className="hero-body">
     <div className="container">
+      
+      <div className="has-text-centered">
+        <p className="blockTitle">Meet Santa Paul</p>
+      </div>
 
         <div className="columns">
             <div className="column">
