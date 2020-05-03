@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CalendlyForm() {
+function EmailForm() {
     return (
         <section className="hero is-light is-large has-extra-padding">
             <div className='content has-text-centered' style={{fontSize:'32pt', fontWeight:'bold'}}>Book Santa Here!</div>
@@ -56,7 +56,7 @@ function CalendlyForm() {
                 </div>
                 <div className='column'>
                 <div className='content has-text-centered' style={{fontSize:'16pt', fontWeight:'bold'}}>Santa's current schedule:</div>
-                    <iframe id="iframePreview" className="content is-rounded" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23da2c38&amp;ctz=America%2FDenver&amp;src=aWE0bG9qMGljYmdidHZwbHNyaWt0YzNpbGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%234285F4&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;title=Santa's%20Current%20Schedule"
+                <iframe src="https://calendar.google.com/calendar/b/4/embed?height=600&amp;wkst=1&amp;bgcolor=%23da2c38&amp;ctz=America%2FDenver&amp;src=c2FudGFzaXRldGVzdGVyQGdtYWlsLmNvbQ&amp;color=%23039BE5&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showDate=1&amp;title&amp;showTitle=0"
                         style={{ border: "solid 3px #058C42", width: "100%", height: "420px", frameborder: "0", scrolling: "no" }}></iframe>
                 </div>
             </div>
@@ -64,4 +64,4 @@ function CalendlyForm() {
     )
 }
 
-export default CalendlyForm;
+export default EmailForm;
