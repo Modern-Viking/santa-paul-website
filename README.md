@@ -17,6 +17,9 @@ This is the website for Santa Paul in the Redlands, California area.
 * https://github.com/Modern-Viking
 * https://github.com/seanianking
 
+## Maintained by
+* Modern Viking Webpages
+
 ## Credits
 
 A big shout out to those who made this website possible. We appreciate all of your help to set this up!
