@@ -25,8 +25,9 @@ transporter.verify((error, success) => {
 router.post('/send', (req, res, next) => {
     const name = req.body.name
     const email = req.body.email
+    let package = req.body.package
     const message = req.body.message
-    const content = `name: ${name} \n email: ${email} \n message: ${contest} `
+    const content = `name: ${name} \n email: ${email} \n package: ${package} \n message: ${message} `
   
     const mail = {
       from: name,
