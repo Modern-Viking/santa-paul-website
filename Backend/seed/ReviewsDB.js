@@ -1,7 +1,10 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/santa-paul-website");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/santa-paul-website", {
+    useNewUrlParser: true,
+    useFindandModify: false
+});
 
 const reviews = [
     {
@@ -38,8 +41,8 @@ const reviews = [
     }
 ];
 
-db.Reviews.deleteMany({})
-  .then(() => db.Reviews.collection.insertMany(reviews))
+db.Review.deleteMany({})
+  .then(() => db.Review.collection.insertMany(reviews))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
