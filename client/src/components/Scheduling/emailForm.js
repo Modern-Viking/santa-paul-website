@@ -21,7 +21,7 @@ function EmailForm() {
             }
         }).then((response) => {
             if (response.data.msg === 'success') {
-                alert("Message Sent.");
+                console.log("Message Sent.");
                 resetForm()
             } else if (response.data.msg === 'fail') {
                 alert("Message failed to send.")

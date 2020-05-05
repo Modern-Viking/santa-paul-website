@@ -2,10 +2,11 @@ import React, {useContext} from 'react'
 import ReactDOM  from 'react-dom'
 import {DeckHallsContext} from '../../pages/Main'
 
-const src = "https://media.giphy.com/media/QuyKu887noyJZm4MSP/giphy.gif";
-const still = "https://media.giphy.com/media/QuyKu887noyJZm4MSP/giphy_s.gif";
+
+const src = "https://media.giphy.com/media/d900an2KmyE7aLHmY1/giphy.gif";
+const still = "https://media.giphy.com/media/d900an2KmyE7aLHmY1/giphy_s.gif";
  
-const LightStringOne = () => {
+const ChucklingSanta = () => {
   const {handleHallDecking, gifState} = useContext(DeckHallsContext);
     return (
         <div>
@@ -14,4 +15,4 @@ const LightStringOne = () => {
       );
   }
 
-  export default LightStringOne;
+  export default ChucklingSanta;
