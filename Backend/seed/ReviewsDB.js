@@ -38,7 +38,7 @@ const reviews = [
     }
 ];
 
-db.Reviews.remove({})
+db.Reviews.deleteMany({})
   .then(() => db.Reviews.collection.insertMany(reviews))
   .then(data => {
     console.log(data.result.n + " records inserted!");
