@@ -28,7 +28,7 @@ console.log(reviews);
 
     return(
 <section className="hero is-link is-large">
-  <div className="hero-body">
+  <div className="hero">
     <div className="container">
 
       <div className="has-text-centered">

@@ -6,7 +6,6 @@ class Schedule extends React.Component{
     render(){
         return(
             <div>
-                <Navbar/>
                 <EmailForm/>
             </div>
         )

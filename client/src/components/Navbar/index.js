@@ -18,7 +18,7 @@ const Navbar = () => {
     </div>
   </div>
 
-  <div id="navbarExampleTransparentExample" className="navbar-menu">
+  <div className="navbar-menu">
     <div className="navbar-start">
       <div className="navbar-item has-dropdown is-hoverable">
         <a className="navbar-link" href="https://bulma.io/documentation/overview/start/">
