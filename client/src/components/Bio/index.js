@@ -1,10 +1,11 @@
 import React from "react";
 import santaPic from "../../Images/Santa.jpg";
+import "./bio.css"
 
 const Bio = () => {
     return(
 <section className="hero is-danger is-medium">
-  <div className="hero-body">
+  <div className="hero">
     <div className="container">
       
       <div className="has-text-centered">
@@ -15,7 +16,8 @@ const Bio = () => {
             <div className="column">
                 <img src={santaPic} alt="Santa in action." />
             </div>
-            <div className="column">
+            <div className="column bio">
+              <p>
             I started out my Santa Claus journey in 2007 when I 
             was asked to fill the red suit for my wife’s school 
             and for my first grandchild’s first Christmas, so I 
@@ -30,6 +32,7 @@ const Bio = () => {
             contract with Bass Pro Shop as a real bearded Santa. 
             I have taken the stead of Santa at schools, churches, 
             hospitals, and private home visits just to name a few.
+              </p>
             </div>
         </div>
 

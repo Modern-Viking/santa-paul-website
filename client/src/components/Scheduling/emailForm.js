@@ -35,7 +35,8 @@ function EmailForm() {
 
     return (
 
-        <section className="hero is-light is-large has-extra-padding">
+<section>
+        <div className="hero is-light is-large has-extra-padding">
             <div className='content has-text-centered' style={{fontSize:'32pt', fontWeight:'bold'}}>Book Santa Here!</div>
             <div className='columns'>
              <form id='emailForm' onSubmit={handleSubmit} method='POST'>
@@ -95,8 +96,20 @@ function EmailForm() {
                         style={{ border: "solid 3px #058C42", width: "100%", height: "420px", frameborder: "0", scrolling: "no" }}></iframe>
                 </div>
             </div>
-        </section>
+        </div>
 
+    <div className="columns">
+        <div className="column"></div>
+        <div className="column is-half">
+            <a className="button is-danger is-full is-large" href="/">
+              <span className="">
+              <span className='is-w-95'> Back to Santa's Workshop</span>
+              </span>
+            </a>
+        </div>
+        <div className="column"></div>
+    </div>
+</section>
     )
 }
 

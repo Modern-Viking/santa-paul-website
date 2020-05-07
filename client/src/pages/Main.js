@@ -31,12 +31,10 @@ const handleHallDecking = e => {
                 handleHallDecking, gifState,
             }}>
             <Canvas/>
-            <Navbar/>
             <Jumbotron/>
             <Buttons/>
             <Bio/>
             <ReviewGallery/>
-            <ShakingBellsOne/>
             </DeckHallsContext.Provider>
         )
 };
