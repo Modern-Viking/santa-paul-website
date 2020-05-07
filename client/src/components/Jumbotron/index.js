@@ -7,34 +7,35 @@ const Jumbotron = () => {
       <div className="hero-body">
         <div className="container">
 
-          <div className='columns has-content-centered has-less-padding'>
+          <div className='columns has-text-centered has-less-padding'>
             <div className='column'>
               <p className='jumboFontScale1'>Welcome to</p>
             </div>
           </div>
 
-          <div className='columns has-content-centered has-less-padding'>
+          <div className='columns has-text-centered has-less-padding'>
             <div className='column'>
             <p className='jumboFontScale2'>Santa Paul's</p>
             </div>
           </div>
-          <div className='columns is-gapless'>
-            <div className='column'>
-              <LightStringOne />
-            </div>
-            <div className='column'>
-              <LightStringOne />
-            </div>
-            <div className='column'>
-              <LightStringOne />
-            </div>
-          </div>
-
-        <div className='columns has-content-centered has-less-padding'>
+          <div className='columns has-text-centered has-less-padding'>
           <div className='column'>
             <p className='jumboFontScale1'>Workshop</p>
           </div>
         </div>
+          <div className='columns is-gapless has-no-bottom-margin'>
+            <div className='column is-hidden-touch'>
+              <LightStringOne />
+            </div>
+            <div className='column centered'>
+              <LightStringOne />
+            </div>
+            <div className='column is-hidden-touch'>
+              <LightStringOne />
+            </div>
+          </div>
+
+        
       </div>
       </div>
     </section >

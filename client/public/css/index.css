@@ -6580,3 +6580,9 @@ label.panel-block {
 .jumboFontScale2{
   font-size: calc(12px + (172 - 12) * (100vw - 320px) / (1366 - 320));
 }
+.has-no-bottom-margin{
+  margin-bottom: -200px !important;
+}
+.centered{
+  justify-content: center !important;
+}
