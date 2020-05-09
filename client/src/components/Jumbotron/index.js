@@ -1,11 +1,12 @@
 import React from "react";
 import LightStringOne from "../gifComponents/lightStringOne";
+import './jumbo.css'
 
 const Jumbotron = () => {
   return (
     <section className="hero is-primary is-medium">
       <div className="hero-body">
-        <div className="container">
+        <div className="container" id="jumbo">
 
           <div className='columns has-text-centered has-less-padding'>
             <div className='column'>
