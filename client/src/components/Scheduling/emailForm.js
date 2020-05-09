@@ -52,7 +52,7 @@ const [formState, setFormState] = useState({
 
         axios({
             method: "POST",
-            url: "http://localhost:3000/send",
+            url: "https://santa-pauls-workshop.herokuapp.com/send",
             data: formState
         }).then((response) => {
             if (response.data.msg === 'success') {
