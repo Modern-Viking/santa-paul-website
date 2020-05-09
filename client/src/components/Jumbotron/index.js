@@ -4,9 +4,8 @@ import './jumbo.css'
 
 const Jumbotron = () => {
   return (
-    <section className="hero is-primary is-medium">
-      <div className="hero-body">
-        <div className="container" id="jumbo">
+    <section className="hero is-primary is-medium" id="intro">
+      <div className="hero-body" id="jumbo">
 
           <div className='columns has-text-centered has-less-padding'>
             <div className='column'>
@@ -37,7 +36,6 @@ const Jumbotron = () => {
           </div>
 
         
-      </div>
       </div>
     </section >
   )
