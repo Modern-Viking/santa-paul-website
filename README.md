@@ -7,7 +7,7 @@ This is the website for Santa Paul in the Redlands, California area.
 
 ## Contents
 * Landing Page
-![LandingPage](public/assets/images/LandingPageImage.png)
+![LandingPage](https://github.com/Modern-Viking/santa-paul-website/blob/master/client/src/Images/landing%20area.jpg?raw=true)
 
 ## Future Updates
 * Admin Capability
