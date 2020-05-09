@@ -6575,10 +6575,10 @@ label.panel-block {
   width: 100% !important;
 }
 .jumboFontScale1{
-  font-size: calc(10px + (108 - 10) * (100vw - 320px) / (1366 - 320));
+  font-size: calc(10px + (72 - 10) * (100vw - 320px) / (1366 - 320));
 }
 .jumboFontScale2{
-  font-size: calc(12px + (172 - 12) * (100vw - 320px) / (1366 - 320));
+  font-size: calc(12px + (108 - 12) * (100vw - 320px) / (1366 - 320));
 }
 .has-no-bottom-margin{
   margin-bottom: -200px !important;

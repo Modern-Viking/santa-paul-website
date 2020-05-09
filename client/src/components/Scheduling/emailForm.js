@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import axios from 'axios';
 import bulmaCalendar from '../../../node_modules/bulma-calendar';
+import TimePicker from 'react-time-picker';
 
 const calendars = bulmaCalendar.attach('[type="date"]', {});
 calendars.forEach(calendar => {
@@ -20,22 +21,39 @@ if (element) {
 
 function EmailForm() {
 
+const [formState, setFormState] = useState({
+    name: '',
+    email: '',
+    date: '',
+    time: '',
+    type: '',
+    message: '',
+    niceList: '',
+
+})
+    const handleInputChange = (e) => {
+       const {name, value} = e.target;
+       setFormState({
+           ...formState,
+           [name]: value,
+       })
+    }
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        const selection = document.getElementById('package').value;
+        // const name = document.getElementById('name').value;
+        // const email = document.getElementById('email').value;
+        // const message = document.getElementById('message').value;
+        // const selection = document.getElementById('package').value;
+        // const date = document.getElementById('date').value;
+        // const time = document.getElementById('time').value;
+        // const niceList = document.getElementById('niceList').value;
+
         axios({
             method: "POST",
             url: "http://localhost:3000/send",
-            data: {
-                name: name,
-                email: email,
-                package: selection,
-                message: message,
-
-            }
+            data: formState
         }).then((response) => {
             if (response.data.msg === 'success') {
                 console.log("Message Sent.");
@@ -61,13 +79,13 @@ function EmailForm() {
                             <div className="field">
                                 <label className="label">What is your name?</label>
                                 <div className="control">
-                                    <input className="input is-primary" type="text" placeholder="Chris Kringle" id='name' />
+                                    <input className="input is-primary" type="text" placeholder="Chris Kringle" name='name' onChange={handleInputChange}/>
                                 </div>
                             </div>
                             <div className="field">
                                 <label className="label">Enter your email address</label>
                                 <div className="control has-icons-left">
-                                    <input className="input is-primary" type="email" placeholder="hollyjolly@santasworkshop.com" id='email' />
+                                    <input className="input is-primary" type="email" placeholder="hollyjolly@santasworkshop.com" name='email' onChange={handleInputChange}/>
                                     <span className="icon is-small is-left">
                                         <i className="fas fa-envelope"></i>
                                     </span>
@@ -76,20 +94,31 @@ function EmailForm() {
                             <div className="field">
                                 <label className="label">Select a date for your Christmas</label>
                                 <div className="control">
-                                    <input className="input is-primary" type="date" placeholder="12/25/20XX" id='date' />
+                                    <input className="input is-primary" type="date" placeholder="12/25/20XX" name='date' onChange={handleInputChange}/>
                                 </div>
                             </div>
                             <div className="field">
                                 <label className="label">What time is your Christmas?</label>
-                                <div className="control">
-                                    <input className="input is-primary" type="time" time-start-time='12:00 PM' id='time' />
+                                <div name='time' className="control">
+                                    <TimePicker  className='input is-primary'
+                                        amPmAriaLabel="Select AM/PM"
+                                        clearAriaLabel="Clear value"
+                                        hourAriaLabel="Hour"
+                                        minuteAriaLabel="Minute"
+                                        nativeInputAriaLabel="Time"
+                                        disableClock
+                                        hourPlaceHolder="12"
+                                        minutePlaceHolder="25"
+                                        onChange={ time => setFormState({...formState, time}) }
+                                        value={formState.time}
+                                    />
                                 </div>
                             </div>
                             <div className="field">
                                 <label className="label ">Choose appointment type</label>
                                 <div className="control is-full-width">
                                     <div className="select is-primary is-full-width">
-                                        <select className="is-full-width" id='package'>
+                                        <select className="is-full-width" name='type' onChange={handleInputChange}>
                                             <option>Please select</option>
                                             <option>In person (30-60 minutes)</option>
                                             <option>Virtual call (15 minutes)</option>
@@ -101,17 +130,21 @@ function EmailForm() {
                             <div className="field">
                                 <label className="label">Message</label>
                                 <div className="control">
-                                    <textarea className="textarea is-primary" placeholder="Write Santa a letter" id='message'></textarea>
+                                    <textarea className="textarea is-primary" placeholder="Write Santa a letter" name='message' onChange={handleInputChange}></textarea>
                                 </div>
                             </div>
-                            <div className='field'>
+                            {/* <div className='field'>
                                 <div className="control">
-                                    <label className="checkbox">
-                                        <input type="checkbox" />
+                                    <label className="radio">
+                                        <input type="radio" name='niceList' onChange={handleInputChange}/>
                                     I hereby certify that I belong on the nice list.
-                            </label>
+                                    </label>
+                                    <label className="radio">
+                                        <input type="radio" name='niceList' onChange={handleInputChange}/>
+                                    I am naughty.
+                                    </label>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="field">
                                 <div className="control">
                                     <button className="button is-primary">Submit</button>
