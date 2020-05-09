@@ -1,6 +1,6 @@
-# Website for Santa Paul
+# Santa Paul's Workshop
 
-This is the website for Santa Paul in the Redlands, California area.
+This is the website for Santa Paul in the Redlands, California area.  He is a professional real bearded santa.  Below you will find the link to the deployed site as well as the links to the contributors githubs and the maintaners website.  You can also find information for future updates, content of the page and the license for this site in this readme.
 
 ### link to the deployed website
 - https://santa-pauls-workshop.herokuapp.com/
@@ -12,6 +12,7 @@ This is the website for Santa Paul in the Redlands, California area.
 ## Future Updates
 * Admin Capability
 * Online Payment Capability
+* Enhanced Mobile Experience
 
 ## Contributors
 * https://github.com/Modern-Viking
@@ -19,13 +20,14 @@ This is the website for Santa Paul in the Redlands, California area.
 
 ## Maintained by
 * Modern Viking Webpages
+* https://modern-viking.github.io/NicksCodingWorld/
 
 ## Credits
 
 A big shout out to those who made this website possible. We appreciate all of your help to set this up!
 * https://github.com/jbejar
 * https://github.com/jrheap
-* https://github.com/Nidant
+* https://github.com/LtWilhelm
 
 ## License
 
