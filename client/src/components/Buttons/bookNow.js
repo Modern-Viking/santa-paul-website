@@ -6,7 +6,7 @@ function BookNow() {
 
   return (
     <div >
-      <p className="control ">
+      <div className="control ">
         <a className="button is-danger is-full is-large is-focused" href="/schedule" >
           <div className='columns is-vcentered is-gapless'>
             <div className='column' style={{width:'100px', height:'100px'}}>
@@ -17,7 +17,7 @@ function BookNow() {
             </div>
           </div>
         </a>
-      </p>
+      </div>
     </div>
   )
 }

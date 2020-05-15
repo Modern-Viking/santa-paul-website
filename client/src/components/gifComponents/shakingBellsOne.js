@@ -1,5 +1,4 @@
 import React, {useContext} from 'react'
-import ReactDOM  from 'react-dom'
 import {DeckHallsContext} from '../../pages/Main'
 
 const src = "https://media.giphy.com/media/QAmSUmHpQWCoUyRHMm/giphy.gif";

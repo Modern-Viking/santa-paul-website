@@ -6,7 +6,7 @@ const Facebook = () => {
 
     return (
         <div>
-            <p className="control">
+            <div className="control">
             <a className="button is-link is-focused is-full is-large" href="https://www.facebook.com/nicolaus.claus.1">
             <div className='columns is-vcentered is-gapless'>
             <div className='column' style={{width:'100px', height:'100px'}}>
@@ -17,7 +17,7 @@ const Facebook = () => {
             </div>
           </div>
             </a>
-          </p>
+          </div>
         </div>
     )
 }

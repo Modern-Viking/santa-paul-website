@@ -8,7 +8,7 @@ function DeckTheHalls() {
 
   return (
     <div>
-      <p className="control">
+      <div className="control">
         <a className="button is-primary is-focused is-full is-large" href="" onClick={handleHallDecking}>
           <div className='columns is-vcentered is-gapless'>
             <div className='column' style={{ width: '100px', height: '100px' }}>
@@ -19,7 +19,7 @@ function DeckTheHalls() {
             </div>
           </div>
         </a>
-      </p>
+      </div>
     </div>
   )
 }
