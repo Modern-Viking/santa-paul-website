@@ -5,8 +5,7 @@ import Facebook from './Facebook';
 
 function Buttons() {
     return (
-        <div className='columns'>
-            <div className='column is-three-fifths is-offset-one-fifth'>
+            <div className='hero'>
                 <div className='columns'>
                     <div className='column is-one-third'>
                         <DeckTheHalls />
@@ -19,7 +18,6 @@ function Buttons() {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 
