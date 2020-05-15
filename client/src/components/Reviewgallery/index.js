@@ -20,7 +20,7 @@ const Reviewgallery = () => {
 
 
     return(
-<section className="hero is-link is-large">
+<section className="hero is-link is-medium">
   <div className="hero">
 
       <div className="has-text-centered">
