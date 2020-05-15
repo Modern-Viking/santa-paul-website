@@ -6,7 +6,6 @@ const Bio = () => {
     return(
 <section className="hero is-danger is-medium">
   <div className="hero">
-    <div className="container">
       
       <div className="has-text-centered">
         <p className="blockTitle">Meet Santa Paul</p>
@@ -34,8 +33,6 @@ const Bio = () => {
             hospitals, and private home visits just to name a few.
               </p>
             </div>
-        </div>
-
         </div>
   </div>
 </section>
