@@ -1,0 +1,34 @@
+  .ticker {
+    display: flex;
+  }
+  .tickerList {
+    display: flex;
+    margin-top: 20px;
+    animation: ticker 15s infinite linear;
+  }
+  .ticker:hover .tickerList {
+    animation-play-state: paused;
+  }
+  .tickerItem {
+    margin-right: 20px;
+  }
+  @-moz-keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @-webkit-keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @-o-keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes ticker {
+    100% {
+      transform: translateX(-100%);
+    }
+  }
