@@ -4,10 +4,8 @@ import Bio from "../components/Bio";
 import ReviewGallery from "../components/Reviewgallery";
 import DeckTheHalls from "../components/Buttons/deckTheHalls";
 import ShakingBellsOne from "../components/gifComponents/shakingBellsOne";
-import BookNow from "../components/Buttons/bookNow";
 import Buttons from "../components/Buttons";
 import Canvas from "../components/Canvas"
-import CalendlyForm from "../components/Scheduling/emailForm";
 
 
 
