@@ -10,9 +10,6 @@ function Buttons() {
                     <div className='column is-one-third'>
                         <DeckTheHalls />
                     </div>
-                    <div className = 'column is-one-third'>
-                        <BookNow/>
-                    </div>
                     <div className='column is-one-third'>
                         <Facebook/>
                     </div>
